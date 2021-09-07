@@ -1,0 +1,44 @@
+@import "../../../../../styles/colors";
+.samples__box {
+  width: 100%;
+  box-sizing: border-box;
+  border: 3px solid $fourth;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  @media screen and (min-width: 576px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sample__card {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    @media screen and (min-width: 576px) {
+      width: 30%;
+    }
+
+    .title__box {
+      width: 100%;
+      text-align: center;
+      color: $third;
+      .sample__title {
+        font-family: verdana;
+        font-size: 16pt;
+      }
+    }
+
+    .img__box {
+      width: 100%;
+
+      .sample__img {
+        width: 100%;
+        border-radius: 20px;
+        @media screen and (min-width: 576px) {
+          margin-bottom: 15px;
+          height: 350px;
+        }
+      }
+    }
+  }
+}

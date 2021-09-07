@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="gallery__box" *ngFor="let item of gallery">
+        <div class="galleryText__box">
+            <h3 class="gallery__title">{{item.title}}</h3>
+        </div>
+        <div class="cards__container">
+            <div class="card__box" *ngFor="let element of item.gallery">
+                <div class="images__box">
+                    <img class="images" src="{{element.img.src}}" alt="{{element.img.alt}}">
+                </div>
+                <div class="card__text">
+                    <div class="image__text">{{element.name}}</div>
+                    <div class="price__text">{{element.price}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

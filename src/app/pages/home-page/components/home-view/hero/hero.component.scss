@@ -1,0 +1,52 @@
+@import '../../../../../styles/colors';
+
+.hero__box {
+    width: 100%;
+    @media screen and (min-width: 576px){
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .heroImg__box{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 3vw;
+        @media screen and (min-width: 576px){
+            width: 50%;
+        }
+
+        .heroImg{
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+    .heroText__box{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        box-sizing: border-box;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        @media screen and (min-width: 576px){
+            width: 50%;
+        }
+        
+
+        .heroText{
+            font-family: Verdana;
+            font-size: 10pt;
+            color: $third;
+            @media screen and (min-width: 576px){
+                font-size: 16pt;
+            }
+        }
+    }
+}
